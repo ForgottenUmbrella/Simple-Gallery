@@ -588,9 +588,7 @@ class VideoFragment : ViewPagerFragment(), TextureView.SurfaceTextureListener, S
             restoreLastVideoSavedPosition()
         }
 
-        if (!wasEnded || !mConfig.loopVideos) {
-            mPlayPauseButton.setImageResource(R.drawable.ic_pause_outline)
-        }
+        mPlayPauseButton.setImageResource(R.drawable.ic_pause_outline)
 
         if (!mWasVideoStarted) {
             mView.video_play_outline.beGone()
